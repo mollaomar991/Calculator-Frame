@@ -1,0 +1,95 @@
+import javax.swing.*;
+
+public class Design extends JFrame {
+    private JTextField Display;
+    private JButton BC,BD,B7,B8,B9,BMULTIPLY,B4,B5,B6,BADD,B1,B2,B3,BSUB,BDOT,B0,BEQUAL,BDEVIDE;
+
+    public Design(){
+        Display = new JTextField();
+        Display.setBounds(0,0,200,50);
+        add(Display);
+
+        BC=new JButton("C");
+        BC.setBounds(100,55,50,50);
+        add(BC);
+
+        BD=new JButton("D");
+        BD.setBounds(150,55,50,50);
+        add(BD);
+
+        B7=new JButton("7");
+        B7.setBounds(0,100,50,50);
+        add(B7);
+
+        B8= new JButton("8");
+        B8.setBounds(50,100,50,50);
+        add(B8);
+
+        B9= new JButton("9");
+        B9.setBounds(100,100,50,50);
+        add(B9);
+
+        BMULTIPLY = new JButton("*");
+        BMULTIPLY.setBounds(150,100,50,50);
+        add(BMULTIPLY);
+
+        B4= new JButton("4");
+        B4.setBounds(0,150,50,50);
+        add(B4);
+
+        B5= new JButton("5");
+        B5.setBounds(50,150,50,50);
+        add(B5);
+
+        B6= new JButton("6");
+        B6.setBounds(100,150,50,50);
+        add(B6);
+
+        BADD= new JButton("+");
+        BADD.setBounds(150,150,50,50);
+        add(BADD);
+
+        B1= new JButton("1");
+        B1.setBounds(0,200,50,50);
+        add(B1);
+
+        B2=new JButton("2");
+        B2.setBounds(50,200,50,50);
+        add(B2);
+
+        B3= new JButton("3");
+        B3.setBounds(100,200,50,50);
+        add(B3);
+
+        BSUB=new JButton("-");
+        BSUB.setBounds(150,200,50,50);
+        add(BSUB);
+
+        BDOT= new JButton(".");
+        BDOT.setBounds(0,250,50,50);
+        add(BDOT);
+
+        B0= new JButton("0");
+        B0.setBounds(50,250,50,50);
+        add(B0);
+
+        BEQUAL= new JButton("=");
+        BEQUAL.setBounds(100,250,50,50);
+        add(BEQUAL);
+
+        BDEVIDE= new JButton("÷");
+        BDEVIDE.setBounds(150,250,50,50);
+        add(BDEVIDE);
+
+        setLayout(null);
+        setSize(200,350);
+        setVisible(true);
+        setResizable(false);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+    }
+
+    public static void main(String[] args) {
+        new Design();
+    }
+}
